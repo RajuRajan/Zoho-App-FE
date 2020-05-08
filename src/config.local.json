@@ -1,0 +1,14 @@
+{
+    "development": {
+        "url": "ovr"
+    },
+    "production": {
+        "url": "ovr pro"
+    },
+    "test": {
+        "url": "test"
+    },
+    "staging": {
+        "url": "staging"
+    }
+}
