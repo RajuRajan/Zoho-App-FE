@@ -31,7 +31,7 @@ module.exports = {
       repo: 'https://github.com/RajuRajan/Zoho-App-FE.git',
       path: '/var/www/production/zoho-fe',
       'post-deploy':
-        'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
+        'sudo npm install && npm run build && pm2 reload ecosystem.config.js --env production',
     },
     production: {
       user: 'root',
