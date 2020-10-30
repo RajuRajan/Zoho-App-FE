@@ -31,7 +31,7 @@ module.exports = {
       repo: 'https://github.com/RajuRajan/Zoho-App-FE.git',
       path: '/var/www/production/zoho-fe',
       'post-deploy':
-        'sudo npm install && npm run db:migrate --env production && sudo pm2 reload ecosystem.config.js --env production',
+        'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
     },
     production: {
       user: 'root',
@@ -41,7 +41,7 @@ module.exports = {
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no'],
       path: '/var/www/production/zoho-fe',
       'post-deploy':
-        'sudo npm install && npm run db:migrate --env production && sudo pm2 reload ecosystem.config.js --env production',
+        'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
     },
   },
 };
