@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'zoho backend',
-      script: 'npm start',
+      name: 'zoho frontend',
+      script: 'node server.js',
 
       // Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/
       args: 'one two',
@@ -25,7 +25,7 @@ module.exports = {
   deploy: {
     development: {
       user: 'ubuntu',
-      host: '13.127.200.89',
+      host: '13.232.120.225',
       ref: 'origin/master',
       key: '/Users/rajarajanlearnyst/Downloads/zoho.pem',
       repo: 'https://github.com/RajuRajan/Zoho-App-FE.git',
@@ -35,7 +35,7 @@ module.exports = {
     },
     production: {
       user: 'root',
-      host: '13.127.200.89',
+      host: '13.232.120.225',
       ref: 'origin/master',
       repo: 'git@github.com:RajuRajan/Zoho-App-FE.git',
       ssh_options: ['StrictHostKeyChecking=no', 'PasswordAuthentication=no'],
